@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon/logoCF.ico">
+
+    <title>Chiquinha Feltro</title>
+
+    <!-- Layout do formulário <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"> -->
+
+
+    <!-- JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <img src="img/inicio.jpg" alt="">
+    </header>
+
+
+    <nav>
+        <div class="agulha">
+            <img src="img/agulha.png" alt="">
+        </div>
+        <ul class="menu">
+            <li><a href="index.html" class="hvr-shutter-in-horizontal">Home</a></li>
+            <li><a href="carreira.html" class="hvr-shutter-in-horizontal">Inicio da Carreira</a></li>
+            <li><a href="art.html" class="hvr-shutter-in-horizontal">Tipos de Artesanato</a></li>
+            <li><a href="contato.html" class="hvr-shutter-in-horizontal">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section>
+
+        <div class="container">
+
+            <h1>Contato</h1>
+
+
+    </section>
+
+    <!--Início do Formulário de Contato-->
+
+    <section style="background-color: #FFE4E1;">
+
+
+
+        <div class="container">
+            <br>
+
+            <form method="POST" action="envia.php" enctype="multipart/form-data">
+
+
+                <!-- Título do formulário -->
+                <legend>Entre em contato conosco</legend>
+
+                <!-- Campo: Nome -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nome">Nome</label>
+                    <div class="col-md-4">
+                        <input id="nome" name="nome" placeholder="Informe seu nome" class="form-control input-md"
+                            required="" type="text">
+                    </div>
+                </div>
+
+                <!-- Campo: Email -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nome">Email</label>
+                    <div class="col-md-4">
+                        <input id="replyto" name="replyto" placeholder="Informe seu email" class="form-control input-md"
+                            required="" type="text">
+                    </div>
+                </div>
+
+                <!-- Campo: Assunto -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="nome">Assunto</label>
+                    <div class="col-md-4">
+                        <input id="assunto" name="assunto" placeholder="Informe o assunto da mensagem"
+                            class="form-control input-md" required="" type="text">
+                    </div>
+                </div>
+
+                <!-- Campo: anexo -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="arquivo">Anexo</label>
+                    <div class="col-md-4">
+                        <input id="arquivo" name="arquivo" class="input-file" type="file">
+                        <span class="help-block">2MB por mensagem</span>
+                    </div>
+                </div>
+
+                <!-- Campo: Mensagem -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="mensagem">Mensagem</label>
+                    <div class="col-md-4">
+                        <textarea class="form-control" id="mensagem" name="mensagem"></textarea>
+                    </div>
+                </div>
+
+                <!-- Botão Enviar -->
+                <center>
+                    <div class="form-group">
+                        <label class="col-md-4 control-label" for="submit"></label>
+                        <div class="col-md-4">
+                            <button type="submit" class="btn btn-inverse">Enviar</button>
+                        </div>
+                    </div>
+
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!--Fim do Formulário de Contato-->
+
+
+    <footer>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <a href="https://wa.me/5521966021299?text=Adorei%20seu%20artigo" style="position:fixed;width:60px;height:60px;bottom:40px;right:40px;background-color:#25d366;color:#FFF;border-radius:50px;text-align:center;font-size:30px;box-shadow: 1px 1px 2px #888;
+  z-index:1000;" target="_blank">
+            <i style="margin-top:16px" class="fa fa-whatsapp"></i>
+        </a>
+
+
+
+        <div class="container-footer">
+            <div class="row-footer">
+                <!--Coluna do footer-->
+                <div class="footer-col">
+                    <h4>Ateliê</h4>
+                    <ul>
+                        <li><a href="quemsou.html">Quem Sou</a></li>
+                        <li><a href="feedback.html">Feedback</a></li>
+                        <li><a href="servico.html">Serviços</a></li>
+
+                    </ul>
+                    <!--Fim da coluna-->
+                </div>
+
+                <div class="footer-col">
+                    <h4>Contato</h4>
+                    <ul>
+                        <li><a href="produto.html">Produtos</a></li>
+                        <li><a href="orcamento.html">Orçamentos</a></li>
+                        <li><a href="redes.html">Redes de Contato</a></li>
+
+
+                    </ul>
+                    <!--Fim da coluna-->
+                </div>
+
+
+
+
+
+                <div class="footer-col">
+                    <h4>Inscreva-se</h4>
+                    <div class="form-sub">
+                        <form action="inscrever.html">
+                            <input type="email" placeholder="Digite seu email" required>
+                            <button>Subsescrever</button>
+                        </form>
+                    </div>
+
+
+                    <!--Fim da coluna-->
+                </div>
+
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

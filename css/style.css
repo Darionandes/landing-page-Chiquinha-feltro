@@ -1,0 +1,369 @@
+body {
+    margin: 0;
+    padding: 40px 0 0 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    background-color: #ffe4e1;
+    line-height: 140%;
+}
+
+hr {
+    margin-top: 2em;
+    background-color: #ddd;
+    border: none;
+    height: 1px;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+
+    background-color: rgb(156, 232, 228);
+
+    box-shadow: 0px 5px 15px #1d1d1d;
+
+    padding: 10px;
+
+    display: flex;
+
+    align-items: center;
+
+    flex-wrap: wrap;
+
+    margin-top: 10px;
+
+    margin-bottom: 50px;
+    
+    justify-content: space-around;
+
+}
+
+
+/* Shutter In Horizontal */
+.hvr-shutter-in-horizontal {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    background: #ffcbdb;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+
+.hvr-shutter-in-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(156, 232, 228);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.hvr-shutter-in-horizontal:hover,
+.hvr-shutter-in-horizontal:focus,
+.hvr-shutter-in-horizontal:active {
+    color: white;
+}
+
+.hvr-shutter-in-horizontal:hover:before,
+.hvr-shutter-in-horizontal:focus:before,
+.hvr-shutter-in-horizontal:active:before {
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 40px;
+
+}
+.menu ul li{
+    display: inline-block;
+}
+
+.menu li a {
+    color: black;
+
+    display: block;
+
+    text-decoration: none;
+
+    padding: 10px 20px 10px 20px;
+
+    border-radius: 10px;
+
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+header {
+    width: 100%;
+    text-align: center;
+
+}
+
+header img {
+    width: 700px;
+    border-radius: 25px;
+    box-shadow: 0px 5px 15px #1d1d1d;
+
+}
+
+.agulha img{
+    width: 300px;
+    
+}
+/** inicio section corpo do site**/
+section {
+    background-color: rgb(156, 232, 228);
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px;
+    box-shadow: 0px 5px 15px #1d1d1d;
+}
+
+.sheimg{
+    text-align: end;
+    padding: 10px 10px;
+    margin-right: 100px;
+}
+.sheimg img{
+    width: 300px;
+    border-radius: 10px 100px / 120px 100px;
+    
+}
+.orderperfil{
+    padding: 20px 20px;
+    
+    
+    
+}
+.container{
+    display: flex;
+    margin-left: 50px;
+}
+
+.gallery {
+    
+    column-count: 3;
+    column-gap: 0;
+
+}
+
+.gallery img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+
+
+
+    transition: scale 350ms ease, opacity 350ms linear;
+}
+
+.gallery:has(img:hover) img:not(:hover) {
+    scale: .9;
+    opacity: .7;
+}
+
+
+
+/** inicio footer**/
+footer {
+    background-color: rgb(156, 232, 228);
+    padding: 50px 0;
+    box-shadow: 0px 5px 15px #1d1d1d;
+}
+
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    width: 20%;
+    padding: 0 20px;
+    
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: black;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+    flex-direction: column;
+    margin-left: -40px;
+    
+}
+
+.footer-col li a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.3s ease;
+    
+
+}
+
+.footer-col li a:hover {
+    text-decoration: none;
+    color: pink;
+    transition: all 0.3s ease;
+    padding-left: 10px;
+
+}
+
+.footer-col .form-sub input::placeholder {
+    color: white;
+}
+
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1px solid white;
+    color: white;
+    background-color: rgb(156, 232, 228);
+}
+
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 17px;
+    color: rgb(156, 232, 228);
+    border-radius: 3px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+    padding: 10px;
+
+}
+
+/*responsivo*/
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    header img {
+        width: 100%;        
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 40px;
+    
+    }
+    .menu ul li{
+        display: inline-block;
+        justify-content: space-between;
+        margin-bottom: 80px;
+    }
+    
+    .menu li a {
+        color: black;
+    
+        display: block;
+    
+        text-decoration: none;
+    
+        padding: 10px 20px 10px 20px;
+    
+        border-radius: 10px;
+    
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 50px;
+    
+    }
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 50px;
+    }
+
+    .sheimg{
+        text-align: end;
+        padding: 10px 10px;
+        margin-right: 100px;
+       
+    }
+
+    .sheimg img{
+        width: 200px;
+        margin-left: 60px;
+        border-radius: 10px 100px / 120px 100px;
+        
+    }
+
+    .agulha img{
+        width: 250px;
+        
+    }
+
+    nav {
+        width: 95%;
+        height: auto;
+    
+        background-color: rgb(156, 232, 228);
+    
+        box-shadow: 0px 5px 15px #1d1d1d;
+    
+        
+    
+        display: flex;
+    
+        align-items: center;
+    
+        flex-wrap: wrap;
+    
+        margin-top: 10px;
+    
+        margin-bottom: 50px;
+        
+        
+    
+    }
+    
+    
+    
+}
